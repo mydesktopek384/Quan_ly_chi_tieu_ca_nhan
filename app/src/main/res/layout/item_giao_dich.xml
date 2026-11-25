@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp">
+
+    <!-- Cột trái: Tên giao dịch + Danh mục + Ngày -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvItemTenGD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ăn trưa &amp; Cà phê"
+            android:textColor="#0F172A"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvItemChiTietGD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Ăn uống · 10/11/2026 · Tháng 11/2026"
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Cột phải: Số tiền (Xanh lá = Thu, Đỏ = Chi) -->
+    <TextView
+        android:id="@+id/tvItemSoTienGD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-800.000 đ"
+        android:textColor="#EF4444"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+</LinearLayout>
